@@ -31,6 +31,7 @@ function Validar() {
     document.getElementById("txtMayor15").value = "Si";
   else
     document.getElementById("txtMayor15").value = "No";
+  documento.getElementById("txtEdad").value = edad;
   let mayor15 = document.querySelector("#txtMayor15").value;
   let colombiano = document.querySelector("#txtColombiano").value;
   let bachiller = document.querySelector("#txtBachiller").value;
