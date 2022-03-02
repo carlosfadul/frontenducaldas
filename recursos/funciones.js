@@ -31,7 +31,7 @@ function Validar() {
     document.getElementById("txtMayor15").value = "Si";
   else
     document.getElementById("txtMayor15").value = "No";
-  documento.getElementById("txtEdad").value = edad;
+  documento.getElementById("txtEdad").value = edad.toString();
   let mayor15 = document.querySelector("#txtMayor15").value;
   let colombiano = document.querySelector("#txtColombiano").value;
   let bachiller = document.querySelector("#txtBachiller").value;
@@ -97,7 +97,7 @@ function BuscarBeneficiario() {
       if (mensaje != "")
         alert("Este beneficiario ya fue procesado")
       else {
-        alert("Beneficiario agregado a la base de datos")
+       
         RegistrarBeneficiario()
       }
     })
