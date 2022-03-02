@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Beneficiarios</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulario de Verificación e Ingreso de Beneficiarios</h1>
+        <form class="row g-3 needs-validation" novalidate>
+
+            <div class="col-md-2">
+                <label for="txtIdentificacion" class="form-label">Documento</label>
+                <input type="text" class="form-control" id="txtIdentificacion" required>
+                <div class="invalid-feedback">
+                    Ingrese el documento
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <label for="txtIgualMinTic" class="form-label">Igual a MinTic</label>
+                <select class="form-select" id="txtIgualMinTic" required>
+                   
+                    <option>Si</option>
+                    <option>No</option>
+                </select>
+                <div class="invalid-feedback">
+                    Ingrese Si o No
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <label for="txtFechaNac" class="form-label">Fecha Nacimiento</label>
+                <input type="text" class="form-control" id="txtFechaNac" required>
+                <div class="invalid-feedback">
+                    Ingrese Fecha de Nacimiento
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <label for="txtMayor15" class="form-label">Mayor 15 Años</label>
+                <input type="text" class="form-control" id="txtMayor15">
+                
+            </div>
+
+            <div class="col-md-2">
+                <label for="txtColombiano" class="form-label">Colombiano</label>
+                <select class="form-select" id="txtColombiano" required>
+                   
+                    <option>Si</option>
+                    <option>No</option>
+                </select>
+                <div class="invalid-feedback">
+                    Ingrese Si o No
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <label for="txtBachiller" class="form-label">Bachiller</label>
+                <select class="form-select" id="txtBachiller" required>
+                   
+                    <option>Si</option>
+                    <option>No</option>
+                </select>
+                <div class="invalid-feedback">
+                    Ingrese Si o No
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <label for="txtCumple" class="form-label">Cumple Requisitos</label>
+                <input type="text" class="form-control" id="txtCumple">
+                
+            </div>
+            
+            <div class="col-md-2">
+                <label for="txtRevisor" class="form-label">Revisado por</label>
+                <input type="text" class="form-control" id="txtRevisor" required>
+                <div class="invalid-feedback">
+                    Ingrese el nombre de la persona que revisó
+                </div>
+            </div>
+           
+            <div class="col-md-8">
+                <label for="txtObservaciones" class="form-label">Observaciones</label>
+                <input type="text" class="form-control" id="txtObservaciones" required>
+                <div class="invalid-feedback">
+                    Ingrese las observaciones
+                </div>
+            </div>
+           
+            <div class="col-2">
+                <input class="btn btn-primary" type="button" value="Validar" onclick="Validar()" />
+            </div>
+
+            <div class="col-2">
+                <button class="btn btn-primary" type="submit">Agregar</button>
+            </div>
+
+            <div class="col-2">
+                <button class="btn btn-primary" type="reset">Limpiar</button>
+            </div>
+
+            
+        </form>
+
+    </div>
+
+    <script type="text/javascript" src="recursos/funciones.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
