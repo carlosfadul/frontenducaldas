@@ -36,7 +36,7 @@ function Validar() {
   let colombiano = document.querySelector("#txtColombiano").value;
   let bachiller = document.querySelector("#txtBachiller").value;
 
-  if (mayor15 == "Si" && colombiano == "Si" && bachiller == "Si")
+  if (mayor15 === "Si" && colombiano === "Si" && bachiller === "Si")
     document.getElementById("txtCumple").value = "Si";
   else
     document.getElementById("txtCumple").value = "No";
