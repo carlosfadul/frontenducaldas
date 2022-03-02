@@ -31,7 +31,7 @@ function Validar() {
     document.getElementById("txtMayor15").value = "Si";
   else
     document.getElementById("txtMayor15").value = "No";
-  documento.getElementById("txtEdad").value = edad.toString();
+  document.getElementById("txtEdad").value = edad.toString();
   let mayor15 = document.querySelector("#txtMayor15").value;
   let colombiano = document.querySelector("#txtColombiano").value;
   let bachiller = document.querySelector("#txtBachiller").value;
@@ -51,7 +51,6 @@ function calcularEdad(fecha) {
   if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
     edad--;
   }
-
   return edad;
 }
 
@@ -97,7 +96,7 @@ function BuscarBeneficiario() {
       if (mensaje != "")
         alert("Este beneficiario ya fue procesado")
       else {
-       
+
         RegistrarBeneficiario()
       }
     })
@@ -112,7 +111,7 @@ function RegistrarBeneficiario() {
   let bachiller = document.querySelector("#txtBachiller").value;
   let cumpleReq = document.querySelector("#txtCumple").value;
   let revisor = document.querySelector("#txtRevisor").value;
-  let observaciones = document.querySelector("#txtObservaciones").value;
+  let observaciones = document.querySelector("#txtObservaciones").value ? document.querySelector("#txtObservaciones").value : " ";
 
   let url = `https://beneficiariosucaldas.herokuapp.com/beneficiarios`;
   let datos = {
