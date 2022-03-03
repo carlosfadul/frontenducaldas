@@ -59,7 +59,7 @@ function calcularEdad(fecha) {
 //calcular la edad de una persona
 //recibe la fecha como un string en formato español
 //devuelve un entero con la edad. Devuelve false en caso de que la fecha sea incorrecta o mayor que el dia actual
-function calcular_edad(fecha){
+function calcularEdad(fecha){
 
   //calculo la fecha de hoy
   hoy=new Date()
